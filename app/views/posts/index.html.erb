@@ -1,0 +1,13 @@
+
+<div class="main posts_index">
+  <div class="container">
+    <h1 class="index_heading">投稿一覧</h1>
+    <% @posts.each do |post|%>
+      <div class="posts_index_item">
+        <%=link_to(post.content,"/posts/#{post.id}") %>
+      </div>
+    <% end%>
+  </div>
+</div>
+
+
