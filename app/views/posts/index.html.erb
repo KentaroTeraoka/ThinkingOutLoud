@@ -4,7 +4,15 @@
     <h1 class="index_heading">投稿一覧</h1>
     <% @posts.each do |post|%>
       <div class="posts_index_item">
-        <%=link_to(post.content,"/posts/#{post.id}") %>
+        <div class="post_left">
+          <img src="<%= "/user_images/#{post.user.image_name}" %>">
+        </div>
+        <div class="post_right">
+          <div class="post_user_name">
+            <%= link_to(post.user.name, "/users/#{post.user.id}") %>
+          </div>
+          <%=link_to(post.content,"/posts/#{post.id}") %>
+        </div>
       </div>
     <% end%>
   </div>
