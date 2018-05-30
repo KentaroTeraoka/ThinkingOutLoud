@@ -52,6 +52,13 @@ class UsersController < ApplicationController
     end
   end
 
+  # def destroy
+  #   @user=User.find_by(id:params[:id])
+  #   @user.destroy
+  #   flash[:notice] = "ユーザーを削除しました"
+  #   redirect_to("/login")
+  # end
+
   def login_form
   end
 
@@ -73,6 +80,11 @@ class UsersController < ApplicationController
     session[:user_id]=nil
     flash[:notice]="ログアウトしました"
     redirect_to("/login")
+  end
+
+  def likes
+    @user=User.find_by(id:params[:id])
+    @likes=Like.where(user_id:@user.id)
   end
 
   def ensure_correct_user

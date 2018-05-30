@@ -30,6 +30,8 @@
 
 .post_user_name a {
   font-weight: 600;
+  font-size:24px;
+  padding: 10px 10px 5px 5px;
 }
 
 .post_user_name a:hover {
@@ -90,6 +92,19 @@
 .post_time {
   color: #8899a6;
   margin-bottom: 10px;
+}
+
+.like_btn{
+  color:#8899a6;
+}
+
+.like_btn_unlike{
+  color:#008080;
+}
+
+.posts_show_item .fa {
+  font-size: 16px;
+  margin-right: 3px;
 }
 
 .post_menus {
