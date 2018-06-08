@@ -1,3 +1,3 @@
 # README
 
-[URL](http://teraken-thinkingoutloud.herokuapp.com/)
+ThinkingOutLoud : [http://teraken-thinkingoutloud.herokuapp.com/](http://teraken-thinkingoutloud.herokuapp.com/)
